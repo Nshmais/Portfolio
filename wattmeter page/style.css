@@ -3,6 +3,7 @@ body{
     color:#747704;
     font-weight:300;
 }
+
 footer{background:#DCDCDC; padding-top:1%; padding-bottom:1%; }
 .indent{text-indent: 50px; color: black;}
 .image-shadow{box-shadow: 10px 10px 5px #888888;}
@@ -13,7 +14,7 @@ footer{background:#DCDCDC; padding-top:1%; padding-bottom:1%; }
 .fit{width:400px; height:200px; object-fit: contain;}
 
 
-/* Remove margins and padding from the list, and add a black background color */
+/*task bar*/
 ul.topnav {
     list-style-type: none;
     margin-left: :20%;
