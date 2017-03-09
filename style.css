@@ -1,37 +1,39 @@
-body{
-    font-family: "Lato", sans-serif;
-    color:#747704;
-    font-weight:300;
+body{ font-family: "Lato", sans-serif;
+      color:#747704;
+      font-weight:300;
 }
 
 footer{ background:#DCDCDC;
         padding-top:1%;
         padding-bottom:1%;
-      }
+}
 
 .indent{ text-indent:50px;
          color: black;
-        }
+}
 
 .image-shadow{box-shadow: 10px 10px 5px #888888;}
 .text-muted{color:#BCBBBB;}
 .text-thin{font-weight:100;}
 .title-super{font-size: 60px;}
-.title-logo{margin-top:20px;}
+
+.title-logo{ margin-top:20px;
+             max-height: 30%;
+             max-width: 30%;
+}
 
 .fit{   width:400px; height:200px;
         object-fit: contain;
-    }
+}
 
 
 /* Remove margins and padding from the list, and add a black background color */
 .topnav {
         list-style-type: none;
-        margin-left: :20%;
         padding-left:5px;
         overflow: hidden;
         background-color: #DCDCDC;
-        }
+}
 
 /* Float the list items side by side */
 .topnav li {float: left;}
@@ -44,10 +46,10 @@ footer{ background:#DCDCDC;
                 text-decoration: none;
                 transition: 0.3s;
                 font-size: 17px;
-              }
+}
 
 /* Change background color of links on hover */
 .topnav li a:hover {background-color: #555;}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
-.topnav li.icon {display: none;}
+.topnav .icon {display: none;}
