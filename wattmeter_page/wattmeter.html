@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
     <title> Watt Meter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,34 +12,34 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="col-md-12">
+        <h1>Watt Meter</h1>
 
-<div class="col-md-12">
-<h1>Watt Meter</h1>
+        <!-- Task bar -->
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="topnav" id="myTopnav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="https://www.youtube.com/watch?v=YT5nKNzq8yo&t=5s" target="_blank">Presentation Video</a></li>
+              <li><a href="#code">Project Code</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="icon">
+              <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-<!-- Task bar -->
-<div class="row">
-  <div class="col-md-12">
-    <ul class="topnav" id="myTopnav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="https://www.youtube.com/watch?v=YT5nKNzq8yo&t=5s" target="_blank">Presentation Video</a></li>
-      <li><a href="#code">Project Code</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li class="icon">
-      <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-</div>
+    </div>
 
 
 <div class="container">
     <div class="col-md-12" >
 <h4>Entry 1 (During Break):</h4>
 <p>Assembled an electric box (THE BLUE BOX) parts from Home Depot to test the (ACS712) Current Sensor. The box is simply an ordinary plug but the box contain the current sensor as shown in the pictures below:</p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter1.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter1.png" alt="image 1">
 <p>As shown the sensor has three wires (Blue 5V, Green GND, and Yellow current signal) the current is measured of 5V range. All the AC circuit will be enclosed inside the box and the plastic box will isolate the AC so it will be safe to be around. The three wires connect to Arduino and the box is connected to a power source (AC outlet) by cable. The current and the white plugs are connected in series.
 
 To operate the sensor I have developed a code that will take the average of multiple reading and display them every 5 seconds with some filtering also.  </p>
@@ -52,7 +52,7 @@ Today I also ordered the (2X16) LCD, Arduino programmer, breadboard.</p>
 
 <h4>Entry 3 (Fri - 1/22/16):</h4>
 <p>Today I learned how to connect the LCD to the Arduino I took me three hours to figure out that almost all the video tutorials on the web do not use the Read/Write pin witch it basically just specify weather we are reading or writing to the address on the LCD. I thought that it was not essential since we are only writing but after three hours of work the lesson was that it does matter. The new (2x16) LCD will arrive on Sunday so I decided to work on (2x8) LCD that I have from previous semester. I manage to make it work then I connect the current sensor and the LCD to the Arduino UNO (easier to connect than Arduino Pro Mini our project microcontroller). As shown in the picture bellow the LCD display the (0.87 amp) consumed by my Laptop and Phone (connected to the blue box). The current goes drastically down as my battery laptop battery charged and processer stopped witch it indicate that the sensor is behaving properly. I also hocked a house appliance to the circuit for 5 hours just to observe the behavior of the circuit in long times and it ace the test.   </p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter2.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter2.png" alt="image 2">
 
 <h4>Entry 4 (Mon - 1/25/16):</h4>
 <p>I start today by attending the SD lab, where my group met we had a lengthy discussion on whether to use 9V battery or we use a power supply that convert AC to 5V. We had the Arduino, Current sensor, the Bluetooth, and the LCD all need to be supplied with 5V VCC. After talking to the TAs we decided to continue working with the 9V that is regulated to fit the VCC and at the same time we came up with AC to DC power supply. I know we were going to face this issue several weeks ago, because the 500mAh capacity of 9V battery won’t keep up with the demand of the component in the circuit. So I had already researched a chip from mouser (490-VSK-S3-5U) that will do just that with respect to the space available to design (smallest as possible).
@@ -60,7 +60,7 @@ Today I also ordered the (2X16) LCD, Arduino programmer, breadboard.</p>
 The second thing that discussed is the voltage and frequency sensing me and Noor had came up with a circuit that will use voltage divider to reduce the 120 AC voltage to just one volt and then we shift it using another voltage divider and 5V source to bias the voltage count for the negative part (also simulate it on Multisim). However the TAs (Isaac and Mr. Smart) gave us some modifications that will definitely help us move forward.
 
 Today I tried to replace the (2x8) LCD with the new (2x16) LCD but I had no luck making it work it lit up but does not display any characters. I even set the potentiometer for the contrast but still no luck. I start to think that the part might be defected.</p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter3.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter3.png" alt="image 3">
 <p>I also came up with a list of parts that we are going to use to constrict the voltage sensing circuit (full wave rectifier, header pins, and resistors for the voltage divider). Feeling excited to program the Arduino Pro Mini with the new programmer that arrived today. </p>
 
 <h4>Entry 5 (Tue – 01/26/2016):</h4>
@@ -91,23 +91,23 @@ After diagnosing the problem, I used My UNO to download the bootloader on the Pr
 
 <h4>Entry 9 (Mon – 02/01/2016):</h4>
 <p>Order was not placed, Put all in new breadboard</p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter4.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter4.png" alt="image 4">
 
 <h4>Entry 10 (Wed – 02/03/2016):</h4>
 <p>Today we received the parts for the voltage and frequency circuit (2 resistors, a full Wave rectifier chip and fuses) I have built the circuit and Noor and Roger made sure that I have the right connections after I was done. We hock the circuit to a function generator. However the result were not that promising on the oscilloscope, it outputs one full wave and a small hump next to it all positive. After consulting with Isaac, he speculate that it might be that our function generator do not supply much current to get the rectifier working, since it is rated  for a very powerful power application, so he suggested to build a regular rectifier from 4 diodes. We order the diodes and they should be ready for next meeting. </p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter5.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter5.png" alt="image 5">
 
 <h4>Entry 11 (Mon – 02/08/2016):</h4>
 <p>Today was an interesting day, we received all the for the voltage circuit which were four diodes. When we test this circuit with the function generator that simulate the AC source. We were not able to trigger the 4 diodes to work because the current is just too low, we run in the same problem with the full wave rectifier chip from before. The solution to this problem was to hock it directly to the AC wall plug. When we hock the oscilloscope to the output terminals to see the behavior of the output and connect to the AC Wall the 150mA fuse blow up. After three tries we were out of fuses. Then we decided to hock the oscilloscope and the AC wall plug to each other in the breadboard to check the behavior of AC in that plug and ones we hock it to the wall a big explosion with loud bang and smoke was everywhere. We has no injures but a small spot was burned on the breadboard. We figure that it might be an isolation problem since the circuit worked when Isaac tried an AC to AC adapter and we had a correct reading on the output of the oscilloscope. Now we will need a transformer.   </p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter6.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter6.png" alt="image 6">
 
 <h4>Entry 12 (Mon – 02/15/2016):</h4>
 <p>Today Roger was in Austin, so he did not Show up to class. Since it was only Noor and I, we spend most of the time planning our voltage circuit and trying to prevent the circuit from exploding again. Isaac had emailed us a transformer that was for audio purposes that will cover our frequency range but we decided not to go with it because of voltage level (usually low level of voltages 5V are associated with Audio). Then we have had couple of transformers to compare, so we decided to go with a stepdown transformer from 120V to 24V. We also had to order some more 150mA fuses which we ordered 5 fast blow. We also ordered 2X (500mA fuses) slow blow just in case we run in to some unexpected problems with the other fuse. We decide to order the voltage divider resisters after testing the transformer because as it was pointed to us, sometimes the values that we Shop for might be slightly different than the ordered parts. So we will hold off on that for now. We expect the order to arrive tomorrow.   </p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter7.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter7.png" alt="image 7">
 
 <h4>Entry 13 (Wed – 02/17/2016):</h4>
 <p>I started today experimenting with the timers (TimerOne) on Arduino. I have some experience with timers in the past when we briefly went over them in other classes mainly for Pic microcontrollers. In the start I familiarized myself with how timers work in Arduino after some research I was able to find a library for timers for Arduino which is not included with the original Arduino Program. After some digging and experimentation, I was able to write an algorithm (code) for a clock using timers and interrupts that will be useful to calculate the total energy. Because Energy is power multiplied by the total duration (time) of operation. After I was done with the code, I have made it run for a while to test its flows if any. After couple of attempts and modifications, it was finally ready and I ran it for 6 hours with no problems.  This clock displays (hour: minutes: seconds) and I can just as easily modify it to include days also.    </p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter8.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter8.png" alt="image 8">
 <p>Today, we also received the transformer's order, Roger and Noor worked on wiring it and assembling the circuit. unfortunately, the transformer is huge and it is really heavy but it work perfectly so we decided to used it to develop the code for Voltage and frequency starting next session hopeful it will take a session to implement our ideas for the code and another session for debugging.</p>
 
 <h4>Entry 14 (Mon – 03/07/2016):</h4>
@@ -115,11 +115,11 @@ After diagnosing the problem, I used My UNO to download the bootloader on the Pr
 
 <h4>Entry 15 (Mon – 03/2x/2016):</h4>
 <p>Our final Voltage and Frequency sensor hardware (which will be parallel to the load) is consist of a step down transformer (3:1 ratio) so from 120 V to 40V then the Voltage divider will reduce it to approximately 5V. I had to change our initial plan to not include a transformer because our issue with Isolation. For the full wave rectifier, it turns out that the microcontroller treat the negative half of the wave as zero values (half wave rectifier) so we can just skip the full wave rectifier for now.</p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter9.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter9.png" alt="image 9">
 
 <h4>Entry 16 (Mon – 03/28/2016):</h4>
 <p>Roger and I today start sketching for the packaging for the hardware of the Watt-Meter. While Noor is still working on the Android App development. Roger and I have developed a preliminary plan or a sketch to allocate the parts of the watt-meter and best spot of soldering them in the package box with respect to the parts dimensions and the shortest possible route for connection. The sketch below explain the placing inside the package box:</p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter10.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter10.png" alt="image 10">
 
 <h4>Entry 17 (Wed – 04/6/2016):</h4>
 <p>Today in the class we worked on packaging (housing) and how it should be shaped. Roger also worked on simulating the circuit that will power the microcontroller which is simply tapping to the voltage after the transformer and run it throw a low pass filter (RC). Resister to limit the current and capacitor to charge and discharge to keep the voltage constant (AC to DC). Then a voltage regulator with output of 7 to 9 Volt because the Arduino Pro Mini has a regulator that accept raw voltage from 5 to 12 V. We also ordered the parts for the circuits and they should be delivered tomorrow so we would be able to build on Monday. On the Other hand I also worked on the Bluetooth code for the App. Since Noor had some modification that wanted me to apply to the code like updating every 10 second instead of every second, which I completed the task</p>
@@ -131,19 +131,19 @@ After diagnosing the problem, I used My UNO to download the bootloader on the Pr
 
 <h4>Entry 19 (Wed – 05/3/2016):</h4>
 <p> We finish soldering the circuit together now we have a circuit that can supply 10V DC to power the microcontroller to power the Arduino which that can get from 5-12 V on the Raw pin to power it up.</p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter11.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter11.png" alt="image 11">
 
 <h4>Entry 20 (Thur – 05/5/2016):</h4>
 <p>Today we add the current sensor and the voltage circuit and the Bluetooth module  to the circuit and i solder them up after laying out the connection and soldering points and i test them and they are preforming well.</p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter12.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter12.png" alt="image 12">
 
 <h4>Entry 21 (Fri – 05/6/2016):</h4>
 <p>Today me and roger but all the circuit in the box we had to trim the board about half an inch to fit it as we planed before and we layed out the connection wires and heat-shrink their connections. but the lid of the box was smaller and we had to reprint it again and also Noor wanted to test its durability and as always he broke it so we have to wait till tomorrow, but we have some mistakes in the lid so me and roger redesigned again to have some edges on tom of the bottom part.  </p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter13.png">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter13.png" alt="image 13">
 
 <h4>Entry 22 (Mon – 05/9/2016):</h4>
 <p>We got the 3D printed box from the library and it is perfect but we have to trim the bottom place so it would fit perfectly and it is done for presentation. we also finish the demonstration today and every thing checked out to be functioning according to  the plan. </p>
-<img class="img-responsive center-block" src="wattmeter_images/wattmeter14.png">">
+<img class="img-responsive center-block" src="wattmeter_images/wattmeter14.png" alt="image 14">
 
 
 </div>
