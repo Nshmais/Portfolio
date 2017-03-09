@@ -1,143 +1,144 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Noah Portfolio Page</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-  <link rel="stylesheet" href="bootstrap.css">
-  <!-- bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <!-- Awsome font -->
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="utf-8">
+        <title>Noah Portfolio Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Awsome font -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row" id="home">
+                <div class="col-md-6">
+                     <img class="title-logo" style="max-height: 30%; max-width: 30%;" src="images/logo.png"  alt ="logo image">
+                </div>
+                <div class="col-md-6 text-right text-uppercase">
+                     <h1 class="text-thin title-super text-center">Noah Shmais</h1>
+                     <center>Electrical Engineer/ Full Stack Web Developer</center>
+                </div>
+            </div>
+
+            <!-- Task bar -->
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="topnav" id="myTopnav">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="Projects_page.html">Projects</a></li>
+                  <li><a href="#organization">Organization</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li class="icon">
+                  <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
 
-<body>
+            <!-- main picture -->
 
-  <div class="container">
-    <div class="row" id="home">
-        <div class="col-md-6">
-             <img class="title-logo" style="max-height: 30%; max-width: 30%;" src="images/logo.png" alt="logo image">
+            <div class="row text-center">
+              <div class="col-md-12"></div>
+                <img class="img-responsive image-shadow" src="https://placekitten.com/g/1140/250" alt=" main image">
+            </div>
+            </br>
+
+            <!-- Education Section -->
+            <div class="row">
+              <div class="col-md-2">
+                <img class="img-responsive" src="https://wiki.teamfortress.com/w/images/thumb/3/3e/Achieved.png/200px-Achieved.png?t=20110424214508" alt="education section image">
+              </div>
+              <div id="education" class="col-md-10">
+                <h4>Bachelor of Science in Electrical Engineering (BSEE)</h4>
+                <p class="indent">University of Texas at Arlington 2016 - 3.5 GPA (Cum Laude)</p>
+                <h4>Full Stack Web Developer Nanodegree </h4>
+                <p class="indent">Udacity 2017</p>
+              </div>
+            </div>
+
+            <!-- Project Section -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-muted">Featured Work</h4>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img class="img-responsive image-shadow" style="object-fit: contain;" src="images/Watt_meter.jpg" alt="image of Wattmeter">
+                    <h3 class="text-uppercase"><a href="wattmeter page\wattmeter.html" target="_blank">Watt Meter</a></h3>
+                    <P>Project 1</P>
+                </div>
+
+                <div class="col-md-4">
+                    <img class="img-responsive image-shadow" src="http://placehold.it/400x200" alt = "project 2 image">
+                    <h3>Analog RF Transmitter</h3>
+                    <p>Comming Soon</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img class="img-responsive image-shadow" src="https://placekitten.com/g/400/200" alt = "project 3 image">
+                    <h3>Telecom Messaging System</h3>
+                    <p>Comming Soon</p>
+                </div>
+            </div>
+
+
+            <!-- PROFESSIONAL ASSOCIATIONS -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-muted">Professional Associations</h4>
+                </div>
+            </div>
+
+            <div class="row text-center" id="organization">
+                <div class="col-md-4">
+                <img class="img-responsive fit" src="images/ieee.png" alt="skill image">
+                <h5 class="text-uppercase">IEEE</h5></div>
+
+                <div class="col-md-4">
+                <img class="img-responsive fit" src="images/Eta Kappa Nu.png" alt="Eta Kappa Nu image">
+                <h5 class="text-uppercase">Eta Kappa Nu</h5></div>
+
+                <div class="col-md-4">
+                <img class="img-responsive fit" src="images/PHI THETA KAPPA.jpg" alt="skill image">
+                <h5 class="text-uppercase">Phi Theta Kappa</h5></div>
+            </div>
         </div>
-        <div class="col-md-6 text-right text-uppercase">
-             <h1 class="text-thin title-super text-center">Noah Shmais</h1>
-             <center>Electrical Engineer/ Full Stack Web Developer</center>
+
+
+        <div class="container">
+            <footer class="row text-center" id="contact">
+                <a href="https://www.linkedin.com/" class="fa-stack fa-lg" target="_blank">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+                </a>
+
+                <a href="https://github.com/Nshmais/" class="fa-stack fa-lg" target="_blank">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+                </a>
+
+                <a href="https://twitter.com/" class="fa-stack fa-lg" target="_blank">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" class="fa-stack fa-lg" target="_blank">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+                </a>
+            </footer>
         </div>
-    </div>
 
-<!-- Task bar -->
-<div class="row">
-  <div class="col-md-12">
-    <ul class="topnav" id="myTopnav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="Projects_page.html">Projects</a></li>
-      <li><a href="#organization">Organization</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
-      <li class="icon">
-      <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-
-<!-- main picture -->
-</br>
-    <div class="row text-center">
-      <div class="col-md-12"></div>
-        <img class="img-responsive image-shadow" src="https://placekitten.com/g/1140/250" alt="main image">
-    </div>
-</br>
-
-<!-- Education Section -->
-    <div class="row">
-      <div class="col-md-2">
-      <!-- https://placekitten.com/g/200/150 -->
-        <img class="img-responsive" src="https://wiki.teamfortress.com/w/images/thumb/3/3e/Achieved.png/200px-Achieved.png?t=20110424214508">
-      </div>
-      <div id="education" class="col-md-10">
-        <h4>Bachelor of Science in Electrical Engineering (BSEE)</h4>
-        <p class="indent">University of Texas at Arlington 2016 - 3.5 GPA (Cum Laude)</p>
-        <h4>Full Stack Web Developer Nanodegree </h4>
-        <p class="indent">Udacity 2017</p>
-      </div>
-    </div>
-
-<!-- Project Section -->
-    <div class="row">
-        <div class="col-md-12">
-            <h4 class="text-muted">Featured Work</h4>
-        </div>
-    </div>
-
-    <div class="row text-center">
-      <div class="col-md-4">
-        <img class="img-responsive image-shadow" style="object-fit: contain;" src="images/Watt_meter.jpg" alt="image of Wattmeter">
-        <h3 class="text-uppercase"><a href="wattmeter page\wattmeter.html" target="_blank">Watt Meter</a></h3>
-        <P >Project 1</P>
-      </div>
-      <div class="col-md-4">
-         <img class="img-responsive image-shadow" src="http://placehold.it/400x200">
-         <h3>Analog RF Transmitter</h3>
-         <p>Comming Soon</p>
-      </div>
-      <div class="col-md-4">
-        <img class="img-responsive image-shadow" src="https://placekitten.com/g/400/200">
-        <h3>Telecom Messaging System</h3>
-        <p>Comming Soon</p>
-      </div>
-    </div>
-
-
-<!-- PROFESSIONAL ASSOCIATIONS -->
-    <div class="row">
-        <div class="col-md-12">
-            <h4 class="text-muted">Professional Associations</h4>
-        </div>
-    </div>
-
-  <div class="row text-center" id="organization">
-        <div class="col-md-4">
-        <img class="img-responsive fit" src="images/ieee.png" alt="skill image">
-        <h5 class="text-uppercase">IEEE</h5></div>
-
-        <div class="col-md-4">
-        <img class="img-responsive fit" src="images/Eta Kappa Nu.png" alt="Eta Kappa Nu image">
-        <h5 class="text-uppercase">Eta Kappa Nu</h5></div>
-
-        <div class="col-md-4">
-        <img class="img-responsive fit" src="images/PHI THETA KAPPA.jpg" alt="skill image">
-        <h5 class="text-uppercase">Phi Theta Kappa</h5></div>
-  </div>
-
-</div>
-
-<footer class="row text-center" id="contact">
-        <a href="https://www.linkedin.com/" class="fa-stack fa-lg">
-        <i class="fa fa-square-o fa-stack-2x"></i>
-        <i class="fa fa-linkedin fa-stack-1x"></i>
-        </a>
-
-        <a href="https://github.com/Nshmais/" class="fa-stack fa-lg">
-        <i class="fa fa-square-o fa-stack-2x"></i>
-        <i class="fa fa-github fa-stack-1x"></i>
-        </a>
-
-        <a href="https://twitter.com/" class="fa-stack fa-lg">
-        <i class="fa fa-square-o fa-stack-2x"></i>
-        <i class="fa fa-twitter fa-stack-1x"></i>
-        </a>
-
-        <a href="https://www.facebook.com/" class="fa-stack fa-lg">
-        <i class="fa fa-square-o fa-stack-2x"></i>
-        <i class="fa fa-facebook fa-stack-1x"></i>
-        </a>
-</footer>
-
-</body>
+    </body>
 </html>

@@ -1,43 +1,53 @@
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     color:#747704;
     font-weight:300;
 }
-footer{background:#DCDCDC; padding-top:1%; padding-bottom:1%; }
-.indent{text-indent: 50px; color: black;}
+
+footer{ background:#DCDCDC;
+        padding-top:1%;
+        padding-bottom:1%;
+      }
+
+.indent{ text-indent:50px;
+         color: black;
+        }
+
 .image-shadow{box-shadow: 10px 10px 5px #888888;}
 .text-muted{color:#BCBBBB;}
 .text-thin{font-weight:100;}
 .title-super{font-size: 60px;}
 .title-logo{margin-top:20px;}
-.fit{width:400px; height:200px; object-fit: contain;}
+
+.fit{   width:400px; height:200px;
+        object-fit: contain;
+    }
 
 
 /* Remove margins and padding from the list, and add a black background color */
-ul.topnav {
-    list-style-type: none;
-    margin-left: :20%;
-    padding-left:5px;
-    overflow: hidden;
-    background-color: #DCDCDC;
-}
+.topnav {
+        list-style-type: none;
+        margin-left: :20%;
+        padding-left:5px;
+        overflow: hidden;
+        background-color: #DCDCDC;
+        }
 
 /* Float the list items side by side */
-ul.topnav li {float: left;}
+.topnav li {float: left;}
 
 /* Style the links inside the list items */
-ul.topnav li a {
-    display: inline-block;
-    color: #747704;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-}
+.topnav li a {  display: inline-block;
+                color: #747704;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                transition: 0.3s;
+                font-size: 17px;
+              }
 
 /* Change background color of links on hover */
-ul.topnav li a:hover {background-color: #555;}
+.topnav li a:hover {background-color: #555;}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.topnav li.icon {display: none;}
+.topnav li.icon {display: none;}
